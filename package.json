@@ -1,0 +1,19 @@
+{
+  "name": "A03Somepalli",
+  "version": "0.0.1",
+  "description": "simple guestbook app",
+  "main": "gbapp.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "ejs": "latest",
+    "express": "^4.14.0",
+    "morgan": "latest"
+  },
+  "author": "Teja",
+  "homepage": "https://bitbucket.org/charan11/",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/charan11/"
+  },
+  "license": "Apache-2.0"
+}

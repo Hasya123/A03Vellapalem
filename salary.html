@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A03 Vellapalem</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+<script src="sal.js"></script>
+
+
+
+
+
+
+<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">A03 Vellapalem</a>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/index" >Home</a></li>
+                <li><a href="/salary">Booking</a></li>
+                <li><a href="/about" >About</a></li>
+                <li><a href="/contact" >Contact</a></li>
+                <li><a href="/guestbook" >guestbook</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="carform" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Book your car!</legend>
+                <label >Select a car of your choice</label>
+                <label class='radiolabel'><input type="radio"  name="selectedcar" value="Hyundai Accent" onclick="calculateTotal()" />Hyundai Accent($20)</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcar" value="Nissan Versa" onclick="calculateTotal()" />Nissan Versa ($25)</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcar" value="Toyota Yaris" onclick="calculateTotal()" />Toyota Yaris($35)</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcar" value="Kia Rio" onclick="calculateTotal()" />Kia Rio($75)</label><br/>
+                <br/>
+                <label >Number of days</label>
+         
+                <select id="time" name='time' onchange="calculateTotal()">
+                <option value="None">days</option>
+                <option value="1day">1day($5)</option>
+                <option value="2days">2days($10)</option>
+                <option value="one week">one week($30)</option>
+                <option value="fortnight">fortnight($60)</option>
+                <option value="one month">one month($140)</option>
+               
+                </select>
+                <br/>
+                <p>
+                <label for='includeinsurance' class="inlinelabel">Include insurance($10)</label>
+               <input type="checkbox" id="includeinsurance" name='includeinsurance' onclick="calculateTotal()" />
+               </p>
+               
+                <p>
+                <label class="inlinelabel" for='includeaccesories'>Include accesories($20)</label>
+                <input type="checkbox" id="includeaccesories" name="includeaccesories" onclick="calculateTotal()" />
+                <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
+                </p>
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+         
+
+        </div>  
+       </form>
+  </div>
+ <hr>
+    <div class="row">
+        <div class="col-sm-12">
+            <footer>
+                <p>© Hasya Durga </p>
+                <p>Last updated on <strong>'October 21, 2016'</strong>.</p>
+            </footer>
+        </div>
+    </div>
+</div>
+</div>
+  
+</body>
+</html>
