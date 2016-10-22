@@ -1,5 +1,5 @@
 {
-  "name": "A03Somepalli",
+  "name": "A03Vellapalem",
   "version": "0.0.1",
   "description": "simple guestbook app",
   "main": "gbapp.js",
@@ -9,11 +9,11 @@
     "express": "^4.14.0",
     "morgan": "latest"
   },
-  "author": "Teja",
-  "homepage": "https://bitbucket.org/charan11/",
+  "author": "Hasya",
+  "homepage": "https://bitbucket.org/Hasya/",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/charan11/"
+    "url": "https://bitbucket.org/Hasya/"
   },
   "license": "Apache-2.0"
 }
